@@ -1,3 +1,6 @@
+
+
+
 (function(){
 
     const sliders = [...document.querySelectorAll('.testimony__body')];
@@ -72,7 +75,9 @@
                 height = answer.scrollHeight;
             }
 
-            (answer.clientHeight === 0) ? (height.scrollHeight);
+            (answer.clientHeight === 0) ? height.answer.scrollHeight
+
+
 
 
 
@@ -80,3 +85,6 @@
         });
     });
 })();
+
+
+
