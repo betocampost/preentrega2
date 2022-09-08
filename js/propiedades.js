@@ -6,6 +6,18 @@ const showAlert=()=>{
 
 
 
+const url="https://ed.team/cursos/css"
+
+fetch(url)
+.then(response => response.json())
+.then(data => {
+    console.log(data)
+})
+
+.catch(err=>console.log(err))
+
+
+
 
 
 (function(){
@@ -31,14 +43,11 @@ const showAlert=()=>{
 
         sliders[Number(currentTestimony)-1].classList.remove('testimony__body--show');
 
-/*
+
         if(value === sliders.length+1 || value === 0){
             value = value === 0 ? sliders.length  : 1;
         }
 
-*/
-      // INTENTE CONVERTIR MIS IF A OPERADORES TERNARIOS, PERO ME MARCAN ERRORES
-        (value===sliders.length) || (value === 0) ? value=value===?sliders.length:1;
 
 
         sliders[value-1].classList.add('testimony__body--show');
@@ -81,11 +90,6 @@ const showAlert=()=>{
             if(answer.clientHeight === 0){
                 height = answer.scrollHeight;
             }
-
-            (answer.clientHeight === 0) ? height.answer.scrollHeight
-
-
-
 
 
             answer.style.height = `${height}px`;
