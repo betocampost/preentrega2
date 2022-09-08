@@ -1,3 +1,10 @@
+import Swal from 'sweetalert2'
+
+const showAlert=()=>{
+    Swal.fire("Ha comprado el kit premium!");
+}
+
+
 
 
 
@@ -85,6 +92,8 @@
         });
     });
 })();
+
+
 
 
 
